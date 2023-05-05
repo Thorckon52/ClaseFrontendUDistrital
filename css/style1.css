@@ -1,0 +1,28 @@
+body{
+    background-color: #242424;
+    color: #949494;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 20px;
+}
+h1{
+    color: #F25C05;
+    font-size: 40px;
+}
+ol{
+    list-style: none;
+    counter-reset: contador;
+}
+ol li{
+    counter-increment: contador;
+}
+ol li::before{
+    content: 'Curso ' counter(contador) ' ';
+    color: #D7F205;
+}
+
+ol li::after{
+    content: ' con ganas.';
+}
+dt{
+    color: #D7F205;
+}
